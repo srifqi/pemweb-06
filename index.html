@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="srifqi">
+	<meta name="description" content="Materi praktikum Pemrograman Web ke-6: CSS - Float, Position, dan Pseudo-Class">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+	<link rel="stylesheet" href="gaya.css">
+	<title>Materi ke-6: CSS - Float, Position, dan Pseudo-Class | Praktikum Pemrograman Web</title>
+</head>
+<body class="impress-not-supported">
+<div id="impress">
+	<div id="awal" class="step awal kotak" data-x="0" data-y="0">
+		<div class="bungkus">
+			<p class="subjudul">CSS</p>
+			<h1 class="judul">Float, Position, dan Pseudo-Class</h1>
+			<p class="subjudul">Materi ke-6 Praktikum Pemrograman Web</p>
+		</div>
+	</div>
+	<div id="utama-float" class="step awal kotak hilang" data-x="0" data-y="0" data-z="1">
+		<div class="bungkus">
+			<p class="subjudul">CSS</p>
+			<h1 class="judul"><mark>Float</mark>, Position, dan Pseudo-Class</h1>
+			<p class="subjudul">Materi ke-6 Praktikum Pemrograman Web</p>
+		</div>
+	</div>
+	<div id="float" class="step kotak" data-x="-1000" data-y="0" data-z="-400" data-rotate="90" data-rotate-y="-45">
+		<p class="judul">Float pada CSS</p>
+		<pre>float: left | right | <mark>none</mark> | inline-start | inline-end</pre>
+		<div class="teks float">
+			<figure>
+				<img id="gambarFloat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Autopista_Taylor%2C_Chicken%2C_Alaska%2C_Estados_Unidos%2C_2017-08-28%2C_DD_102.jpg/320px-Autopista_Taylor%2C_Chicken%2C_Alaska%2C_Estados_Unidos%2C_2017-08-28%2C_DD_102.jpg" width="320" height="213">
+				<figcaption>Jalan Raya Taylor, Alaska, AS (Diego Delso, CC BY-SA)</figcaption>
+			</figure>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>float</code> pada sebuah gambar. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+			<p>Paragraf terakhir ini bertujuan untuk memperpanjang teks saja. Penulis sudah kehabisan ide untuk membuat teks peraga yang nantinya bisa dipakai untuk menjelaskan <code>float</code> dalam CSS.</p>
+		</div>
+	</div>
+	<div id="float-left" class="step kotak" data-x="-1000" data-y="1000" data-z="-400" data-rotate="90" data-rotate-y="-45">
+		<p class="judul">Float pada CSS</p>
+		<pre>float: <mark>left</mark> | right | none | inline-start | inline-end</pre>
+		<div class="teks float">
+			<figure style="float: left;">
+				<img id="gambarFloat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Autopista_Taylor%2C_Chicken%2C_Alaska%2C_Estados_Unidos%2C_2017-08-28%2C_DD_102.jpg/320px-Autopista_Taylor%2C_Chicken%2C_Alaska%2C_Estados_Unidos%2C_2017-08-28%2C_DD_102.jpg" width="320" height="213">
+				<figcaption>Jalan Raya Taylor, Alaska, AS (Diego Delso, CC BY-SA)</figcaption>
+			</figure>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>float</code> pada sebuah gambar. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+			<p>Paragraf terakhir ini bertujuan untuk memperpanjang teks saja. Penulis sudah kehabisan ide untuk membuat teks peraga yang nantinya bisa dipakai untuk menjelaskan <code>float</code> dalam CSS.</p>
+		</div>
+	</div>
+	<div id="float-right" class="step kotak" data-x="-1000" data-y="2000" data-z="-400" data-rotate="90" data-rotate-y="-45">
+		<p class="judul">Float pada CSS</p>
+		<pre>float: left | <mark>right</mark> | none | inline-start | inline-end</pre>
+		<div class="teks float">
+			<figure style="float: right;">
+				<img id="gambarFloat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Autopista_Taylor%2C_Chicken%2C_Alaska%2C_Estados_Unidos%2C_2017-08-28%2C_DD_102.jpg/320px-Autopista_Taylor%2C_Chicken%2C_Alaska%2C_Estados_Unidos%2C_2017-08-28%2C_DD_102.jpg" width="320" height="213">
+				<figcaption>Jalan Raya Taylor, Alaska, AS (Diego Delso, CC BY-SA)</figcaption>
+			</figure>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>float</code> pada sebuah gambar. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+			<p>Paragraf terakhir ini bertujuan untuk memperpanjang teks saja. Penulis sudah kehabisan ide untuk membuat teks peraga yang nantinya bisa dipakai untuk menjelaskan <code>float</code> dalam CSS.</p>
+		</div>
+	</div>
+	<div id="float-inline" class="step kotak" data-x="-1000" data-y="3000" data-z="-400" data-rotate="90" data-rotate-y="-45">
+		<p class="judul">Float pada CSS</p>
+		<pre>float: left | right | none | <mark>inline-start</mark> | <mark>inline-end</mark></pre>
+		<p>Nilai <code>inline-start</code> dan <code>inline-end</code> mengikuti arah penulisan teks.</p>
+		<table style="margin: 0 auto;">
+			<tr>
+				<th>Nilai <code>float</code></th>
+				<th><code>dir="ltr"</code></th>
+				<th><code>dir="rtl"</code></th>
+			</tr>
+			<tr>
+				<td><code>inline-start</code></td>
+				<td><code>left</code></td>
+				<td><code>right</code></td>
+			</tr>
+			<tr>
+				<td><code>inline-end</code></td>
+				<td><code>right</code></td>
+				<td><code>left</code></td>
+			</tr>
+		</table>
+	</div>
+	<div id="float-clear" class="step kotak" data-x="-1000" data-y="4000" data-z="-400" data-rotate="90" data-rotate-y="-45">
+		<p class="judul">Clear pada CSS</p>
+		<pre>clear: none | left | right | both | inline-start | inline-end</pre>
+<pre>
+&lt;div style="float: right;"&gt;Kanan #1&lt;/div&gt;
+&lt;div style="float: right;"&gt;Kanan #2&lt;/div&gt;
+</pre>
+		<div style="background: green; padding: 8px;">
+			<div style="background: orange; float: right;">Kanan #1</div>
+			<div style="background: orange; float: right;">Kanan #2</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>float</code> pada sebuah gambar. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+		</div>
+<pre>
+&lt;div style="float: right;"&gt;Kanan #1&lt;/div&gt;
+&lt;div style="<mark>clear: right;</mark> float: right;"&gt;Kanan #2&lt;/div&gt;
+</pre>
+		<div style="background: green; padding: 8px;">
+			<div style="background: orange; float: right;">Kanan #1</div>
+			<div style="background: orange; clear: right; float: right;">Kanan #2</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>float</code> pada sebuah gambar. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+		</div>
+	</div>
+	<div id="float-masalah" class="step kotak" data-x="-1000" data-y="5000" data-z="-400" data-rotate="90" data-rotate-y="-45">
+		<p class="judul">Permasalahan Float</p>
+		<p>Jika sebuah elemen memiliki anak yang semuanya punya properti <code>float</code>, elemen tersebut akan kehilangan isinya sehingga tinggi elemen tersebut akan nol.</p>
+		<div style="background: green; padding: 8px;">
+			<div style="background: orange; float: left;">Kiri</div>
+			<div style="background: orange; float: right;">Kanan</div>
+		</div>
+		<p style="margin-top: 48px;">Hal tersebut bisa dibetulkan dengan menggunakan properti <code>clear</code>.</p>
+		<div style="background: green; padding: 8px;">
+			<div style="background: orange; float: left;">Kiri</div>
+			<div style="background: orange; float: right;">Kanan</div>
+			<div style="clear: both;"></div>
+		</div>
+<pre>
+&lt;div style="background: green; padding: 8px;"&gt;
+    &lt;div style="background: orange; float: left;"&gt;Kiri&lt;/div&gt;
+    &lt;div style="background: orange; float: right;"&gt;Kanan&lt;/div&gt;
+    <mark>&lt;div style="clear: both;"&gt;&lt;/div&gt;</mark>
+&lt;/div&gt;
+</pre>
+		<p>Hal ini tidak disarankan karena properti <code>float</code> tidak dibuat untuk membagi tata letak seperti di atas. Ada properti-properti lain yang lebih sesuai untuk itu (baca tentang CSS Flexbox).</p>
+	</div>
+	<div id="utama-position" class="step awal kotak hilang" data-x="0" data-y="0" data-z="2">
+		<div class="bungkus">
+			<p class="subjudul">CSS</p>
+			<h1 class="judul">Float, <mark>Position</mark>, dan Pseudo-Class</h1>
+			<p class="subjudul">Materi ke-6 Praktikum Pemrograman Web</p>
+		</div>
+	</div>
+	<div id="position" class="step kotak" data-x="1000" data-y="0" data-z="-400" data-rotate="-90" data-rotate-y="45">
+		<p class="judul">Position pada CSS</p>
+		<pre>position: <mark>static</mark> | relative | absolute | sticky | fixed</pre>
+		<div class="teks position">
+			<p>Nilai <code>static</code> adalah nilai bawaan untuk properti <code>position</code>. Nilai ini berarti bahwa elemen tersebut tidak berpindah dan mengikuti alur halaman.</p>
+			<div class="kotak-contoh" style="position: static;">Kotak</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>position</code>. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+		</div>
+	</div>
+	<div id="position-relative" class="step kotak" data-x="1000" data-y="-1000" data-z="-400" data-rotate="-90" data-rotate-y="45">
+		<p class="judul">Position pada CSS</p>
+		<pre>position: static | <mark>relative</mark> | absolute | sticky | fixed</pre>
+		<div class="teks position">
+			<p>Nilai <code>relative</code> berarti bahwa elemen tersebut berpindah secara relatif dari letak seharusnya.</p>
+			<div class="kotak-contoh" style="position: relative;">Kotak</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>position</code>. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+		</div>
+	</div>
+	<div id="position-absolute" class="step kotak" data-x="1000" data-y="-2000" data-z="-400" data-rotate="-90" data-rotate-y="45">
+		<p class="judul">Position pada CSS</p>
+		<pre>position: static | relative | <mark>absolute</mark> | sticky | fixed</pre>
+		<div class="teks position gulir" style="position: relative;">
+			<p>Nilai <code>absolute</code> berarti bahwa elemen tersebut terletak pada suatu posisi mutlak terhadap halaman atau elemen induknya (yang memiliki properti <code>position: relative;</code>).</p>
+			<div class="kotak-contoh" style="position: absolute;">Kotak</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>position</code>. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+			<p>Paragraf terakhir ini bertujuan untuk memperpanjang teks saja. Penulis sudah kehabisan ide untuk membuat teks peraga yang nantinya bisa dipakai untuk menjelaskan <code>float</code> dalam CSS.</p>
+		</div>
+	</div>
+	<div id="position-fixed" class="step kotak" data-x="1000" data-y="-3000" data-z="-400" data-rotate="-90" data-rotate-y="45">
+		<p class="judul">Position pada CSS</p>
+		<pre>position: static | relative | absolute | sticky | <mark>fixed</mark></pre>
+		<div class="teks position gulir">
+			<p>Nilai <code>fixed</code> berarti sama dengan nilai <code>absolute</code>, kecuali letaknya tetap ketika halaman digulir.</p>
+			<div class="kotak-contoh" style="position: fixed;">Kotak</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>position</code>. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+			<p>Paragraf terakhir ini bertujuan untuk memperpanjang teks saja. Penulis sudah kehabisan ide untuk membuat teks peraga yang nantinya bisa dipakai untuk menjelaskan <code>float</code> dalam CSS.</p>
+		</div>
+	</div>
+	<div id="position-sticky" class="step kotak" data-x="1000" data-y="-4000" data-z="-400" data-rotate="-90" data-rotate-y="45">
+		<p class="judul">Position pada CSS</p>
+		<pre>position: static | relative | absolute | <mark>sticky</mark> | fixed</pre>
+		<div class="teks position gulir">
+			<p>Nilai <code>sticky</code> berarti bahwa elemen tersebut mengikuti alur halaman sampai elemen tersebut akan terpotong karena digulir. Elemen tersebut akan berubah menjadi bernilai <code>fixed</code> dengan mempertahankan letak relatifnya.</p>
+			<div class="kotak-contoh" style="position: sticky;">Kotak</div>
+			<p>Ini adalah contoh teks. Teks ini dibuat untuk meragakan pemakaian <code>position</code>. Teks ini sengaja ditulis cukup panjang agar dampaknya bisa terlihat. Apabila teks terlalu pendek, dampaknya kurang terasa.</p>
+			<p>Selain itu, teks ini juga ditulis dalam beberapa paragraf untuk memberikan poin-poin yang berbeda. Tiap paragraf memiliki ide pokok masing-masing. Ide pokok tersebut lalu dikembangkan agar menjadi paragraf yang utuh. Tidak boleh ada kalimat yang tidak berhubungan dalam satu paragraf.</p>
+			<p>Paragraf terakhir ini bertujuan untuk memperpanjang teks saja. Penulis sudah kehabisan ide untuk membuat teks peraga yang nantinya bisa dipakai untuk menjelaskan <code>float</code> dalam CSS.</p>
+		</div>
+	</div>
+	<div id="utama-pseudo-class" class="step awal kotak hilang" data-x="0" data-y="0" data-z="3">
+		<div class="bungkus">
+			<p class="subjudul">CSS</p>
+			<h1 class="judul">Float, Position, dan <mark>Pseudo-Class</mark></h1>
+			<p class="subjudul">Materi ke-6 Praktikum Pemrograman Web</p>
+		</div>
+	</div>
+	<div id="pseudo-class" class="step kotak" data-x="0" data-y="800" data-z="-400" data-rotate-x="-45">
+		<p class="judul">Pseudo-Class pada CSS</p>
+		<p>Pseudo-class adalah perintah yang ditaruh setelah selector untuk memilih keadaan-keadaan khusus dari elemen yang terpilih.</p>
+		<aside id="contoh-tautan">
+			<a href="https://id.wikipedia.org" target="_blank" rel="noopener">Contoh tautan</a>
+		</aside>
+<pre>
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: cyan; }
+a:active { color: red; }
+</pre>
+		<aside id="contoh-daftar">
+			<ul>
+				<li>Anak pertama</li>
+				<li>Anak kedua</li>
+				<li>Anak ketiga</li>
+				<li>Anak keempat</li>
+				<li>Anak terakhir</li>
+			</ul>
+		</aside>
+<pre>
+li:first-child { color: red; }
+li:nth-child(3) { color: darkorange; }
+li:nth-child(2n) { text-decoration: underline; }
+li:last-child { color: green; }
+</pre>
+	</div>
+	<div id="css-reset" class="step kotak" data-x="0" data-y="-800" data-z="-400" data-rotate-x="-135" data-rotate-y="180">
+		<p class="judul">CSS Reset</p>
+		<p>Kita dapat mengatur ulang nilai bawaan dari peramban dengan menggunakan tanda bintang <code>*</code> sebagai selector semua elemen.</p>
+<pre>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+</pre>
+	</div>
+	<div id="akhir" class="step hilang" data-x="0" data-y="0" data-z="1000" data-rotate="-45" data-scale="10">
+		<div id="kotak-terima-kasih"><div class="bungkus"><p>Terima kasih!</p></div></div>
+	</div>
+</div>
+<script src="impress.js"></script>
+<script>window.onload = function () { impress().init(); }</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+body {
+	background: black;
+	color: white;
+	font: 16px "Open Sans", Roboto, Arial, sans-serif;
+}
+
+.kotak {
+	background: #121212;
+	border: 2px solid rgba(255, 255, 255, .12);
+	border-radius: 4px;
+	height: 600px;
+	padding: 24px;
+	width: 800px;
+}
+
+pre, code {
+	border: 1px solid rgba(255, 255, 255, .12);
+	font-family: "Source Code Pro", "Inconsolata", "Courier New", Courier, monospace;
+	margin: 8px 0;
+	padding: 4px 8px;
+}
+
+code {
+	margin: 0;
+	padding: 2px 4px;
+}
+
+pre mark {
+	background: yellow;
+	color: black;
+}
+
+@keyframes fadeIn {
+	0% {
+		display: none;
+		opacity: 0;
+	}
+
+	1% {
+		display: block;
+		opacity: 0.01;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+	}
+}
+
+.hilang {
+	display: none;
+	opacity: 0;
+}
+
+.hilang.active {
+	animation: fadeIn .5s ease-in-out;
+	display: block;
+	opacity: 1;
+}
+
+.bungkus {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	width: 100%;
+}
+
+.judul {
+	font-size: 64px;
+	margin: 0;
+}
+
+.judul mark {
+	background: yellow;
+	color: black;
+}
+
+.subjudul {
+	color: gray;
+	font-size: 32px;
+	margin: 0;
+}
+
+.teks {
+	border: 1px solid rgba(255, 255, 255, .12);
+	margin: 0 auto;
+	padding: 4px 8px;
+	text-align: justify;
+}
+
+.teks p {
+	margin: 8px 0;
+}
+
+figure {
+	border: 1px solid rgba(255, 255, 255, .12);
+	display: inline-block;
+	font-size: 80%;
+	margin: 0 8px;
+	padding: 3px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table th, table td {
+	border: 1px solid rgba(255, 255, 255, .12);
+	padding: 16px;
+}
+
+table th {
+	background: whitesmoke;
+	color: #121212;
+}
+
+.kotak-contoh {
+	background: rgba(255, 255, 0, .24);
+	border: 1px solid rgba(255, 255, 255, .12);
+	display: inline-block;
+	left: 0;
+	padding: 8px;
+	width: min-content;
+	top: 0;
+	transition: top 0.75s ease 1s, left 0.75s ease 1s;
+}
+
+#position-relative.present .kotak-contoh {
+	top: 24px;
+	left: 24px;
+}
+
+.teks.position.gulir {
+	width: 400px;
+	height: 300px;
+	overflow: auto;
+}
+
+#position-absolute.present .kotak-contoh {
+	top: 112px;
+	left: 160px;
+}
+
+#position-fixed .kotak-contoh {
+	top: 158px;
+	left: 216px;
+}
+
+#position-fixed.present .kotak-contoh {
+	top: 270px;
+	left: 375px;
+}
+
+#kotak-terima-kasih {
+	background: rgba(255, 255, 255, .72);
+	border: 1px solid rgba(255, 255, 255, .12);
+	color: black;
+	font-size: 72px;
+	height: 400px;
+	text-align: center;
+	width: 400px;
+}
+
+#contoh-tautan, #contoh-daftar {
+	background: white;
+	color: black;
+	float: right;
+	padding: 8px;
+}
+
+#contoh-tautan a:link { color: blue; }
+#contoh-tautan a:visited { color: purple; }
+#contoh-tautan a:hover { color: cyan; }
+#contoh-tautan a:active { color: red; }
+
+#contoh-daftar ul {
+	margin: 0;
+	padding: 0 0 0 16px;
+}
+
+#contoh-daftar li:first-child { color: red; }
+#contoh-daftar li:nth-child(3) { color: darkorange; }
+#contoh-daftar li:nth-child(2n) { text-decoration: underline; }
+#contoh-daftar li:last-child { color: green; }
